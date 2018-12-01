@@ -30,7 +30,7 @@ script:
   - npm --version
   - yarn --version
   - yarn build
-  - yarn test
+  - yarn lint
 
 notifications:
   email:

@@ -13,7 +13,7 @@ boilerplate for create web using vue and vuex.
 | [vuex]          | [![vuex-status]][vuex-package] |  Centralized State Management for Vue.js. |
 | [vue-router]          | [![vue-router-status]][vue-router-package] |  The official router for Vue.js. |
 | [vue-cli]          | [![vue-cli-status]][vue-cli-package] |  Standard Tooling for Vue.js Development. |
-| [materialui]          | [![materialui-status]][materialui-package] | React components that implement Google's Material Design. |
+| [coreui]          | [![coreui-status]][coreui-package] | Free WebApp UI Kit built on top of Bootstrap 4. |
 
 [vue]: https://github.com/vuejs/vue
 [vue-status]: https://img.shields.io/npm/v/vue.svg
@@ -27,9 +27,9 @@ boilerplate for create web using vue and vuex.
 [vue-cli]: https://github.com/vuejs/vue-cli
 [vue-cli-status]: https://img.shields.io/npm/v/vue-cli.svg
 [vue-cli-package]: https://npmjs.com/package/vue-cli
-[materialui]: https://github.com/mui-org/material-ui
-[materialui-status]: https://img.shields.io/npm/v/material-ui.svg
-[materialui-package]: https://npmjs.com/package/material-ui
+[coreui]: https://github.com/coreui/coreui
+[coreui-status]: https://img.shields.io/npm/v/@coreui/coreui.svg
+[coreui-package]: https://npmjs.com/package/@coreui/coreui
 
 ## Folder Structure
 
@@ -45,28 +45,22 @@ boilerplate-vue-vuex
 │   └── robots.txt
 ├── src/
 │   ├── assets
-│   │   ├── img/
 │   │   └── scss/
-│   ├── components
-│   │   ├── Cards/
-│   │   ├── Dropdown.vue
-│   │   ├── NotificationPlugin/
-│   │   ├── SidebarPlugin/
-│   │   ├── Tables/
-│   │   └── index.js
-│   ├── pages
-│   │   ├── Dashboard.vue
-│   │   ├── Icons.vue
-│   │   ├── Layout/
-│   │   ├── Maps.vue
-│   │   ├── Notifications.vue
-│   │   ├── TableList.vue
-│   │   ├── Typography.vue
-│   │   ├── UpgradeToPRO.vue
-│   │   ├── UserProfile/
-│   │   ├── UserProfile.vue
-│   │   └── index.js
-│   ├── routers/
+│   ├── components/
+│   ├── containers/
+│   ├── views
+│   │   ├── base/
+│   │   ├── buttons/
+│   │   ├── charts/
+│   │   ├── dashboard/
+│   │   ├── icons/
+│   │   ├── notification/
+│   │   ├── pages/
+│   │   ├── theme/
+│   │   ├── users/
+│   │   ├── widgets/
+│   ├── shared/
+│   ├── router/
 │   │   └── router.js
 │   ├── vuex/
 │   │   ├── actions/
@@ -74,12 +68,10 @@ boilerplate-vue-vuex
 │   │   ├── mutations/
 │   │   ├── states/
 │   │   └── store.js
+│   ├── _nav.js
 │   ├── App.vue
 │   ├── main.js
 │   ├── registerServiceWorker.js
-│   ├── globalComponents.js
-│   ├── globalDirectives.js
-│   └── material-dashboard.js
 ├── tests/
 │   ├── e2e/
 │   └── unit/

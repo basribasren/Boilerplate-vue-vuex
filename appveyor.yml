@@ -29,7 +29,7 @@ test_script:
   - yarn --version
   - yarn install
   - yarn build
-  - yarn test
+  - yarn lint
 
 cache:
   - node_modules
