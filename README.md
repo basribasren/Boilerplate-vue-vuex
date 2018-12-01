@@ -1,8 +1,110 @@
 # boilerplate-vue-vuex
 
-[![Build Status](https://travis-ci.org/basribasren/boilerplate-react-redux.svg?branch=master)](https://travis-ci.org/basribasren/boilerplate-react-redux) [![Build status](https://ci.appveyor.com/api/projects/status/weuboxr8dwbpp0q2/branch/master?svg=true)](https://ci.appveyor.com/project/basribasren/boilerplate-react-redux/branch/master) [![dependencies Status](https://david-dm.org/basribasren/boilerplate-react-redux/status.svg)](https://david-dm.org/basribasren/boilerplate-react-redux) ![GitHub All Releases](https://img.shields.io/github/downloads/basribasren/boilerplate-react-redux/total.svg) [![GitHub license](https://img.shields.io/github/license/basribasren/boilerplate-react-redux.svg)](https://github.com/basribasren/boilerplate-react-redux/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/basribasren/boilerplate-react-redux.svg)](https://github.com/basribasren/boilerplate-react-redux/commits/master)
+[![Build Status](https://travis-ci.org/basribasren/boilerplate-vue-vuex.svg?branch=master)](https://travis-ci.org/basribasren/boilerplate-vue-vuex) [![Build status](https://ci.appveyor.com/api/projects/status/weuboxr8dwbpp0q2/branch/master?svg=true)](https://ci.appveyor.com/project/basribasren/boilerplate-vue-vuex/branch/master) [![dependencies Status](https://david-dm.org/basribasren/boilerplate-vue-vuex/status.svg)](https://david-dm.org/basribasren/boilerplate-vue-vuex) ![GitHub All Releases](https://img.shields.io/github/downloads/basribasren/boilerplate-vue-vuex/total.svg) [![GitHub license](https://img.shields.io/github/license/basribasren/boilerplate-vue-vuex.svg)](https://github.com/basribasren/boilerplate-vue-vuex/blob/master/LICENSE) [![GitHub last commit](https://img.shields.io/github/last-commit/basribasren/boilerplate-vue-vuex.svg)](https://github.com/basribasren/boilerplate-vue-vuex/commits/master)
 
 boilerplate for create web using vue and vuex.
+
+## Ecosystem
+
+<!-- prettier-ignore -->
+| Project | Status | Description |
+|---------|--------|-------------|
+| [vue]          | [![vue-status]][vue-package] |  A progressive, incrementally-adoptable JavaScript framework for building UI on the web. |
+| [vuex]          | [![vuex-status]][vuex-package] |  Centralized State Management for Vue.js. |
+| [vue-router]          | [![vue-router-status]][vue-router-package] |  The official router for Vue.js. |
+| [vue-cli]          | [![vue-cli-status]][vue-cli-package] |  Standard Tooling for Vue.js Development. |
+| [materialui]          | [![materialui-status]][materialui-package] | React components that implement Google's Material Design. |
+
+[vue]: https://github.com/vuejs/vue
+[vue-status]: https://img.shields.io/npm/v/vue.svg
+[vue-package]: https://npmjs.com/package/vue
+[vuex]: https://github.com/vuejs/vuex
+[vuex-status]: https://img.shields.io/npm/v/vuex.svg
+[vuex-package]: https://npmjs.com/package/vuex
+[vue-router]: https://github.com/vuejs/vue-router
+[vue-router-status]: https://img.shields.io/npm/v/vue-router.svg
+[vue-router-package]: https://npmjs.com/package/vue-router
+[vue-cli]: https://github.com/vuejs/vue-cli
+[vue-cli-status]: https://img.shields.io/npm/v/vue-cli.svg
+[vue-cli-package]: https://npmjs.com/package/vue-cli
+[materialui]: https://github.com/mui-org/material-ui
+[materialui-status]: https://img.shields.io/npm/v/material-ui.svg
+[materialui-package]: https://npmjs.com/package/material-ui
+
+## Folder Structure
+
+After creation, your project should look like this:
+
+```
+boilerplate-vue-vuex
+├── public/
+│   └── img/
+│   └── favicon.ico
+│   └── index.html
+│   └── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── assets
+│   │   ├── img/
+│   │   └── scss/
+│   ├── components
+│   │   ├── Cards/
+│   │   ├── Dropdown.vue
+│   │   ├── NotificationPlugin/
+│   │   ├── SidebarPlugin/
+│   │   ├── Tables/
+│   │   └── index.js
+│   ├── pages
+│   │   ├── Dashboard.vue
+│   │   ├── Icons.vue
+│   │   ├── Layout/
+│   │   ├── Maps.vue
+│   │   ├── Notifications.vue
+│   │   ├── TableList.vue
+│   │   ├── Typography.vue
+│   │   ├── UpgradeToPRO.vue
+│   │   ├── UserProfile/
+│   │   ├── UserProfile.vue
+│   │   └── index.js
+│   ├── routers/
+│   │   └── router.js
+│   ├── vuex/
+│   │   ├── actions/
+│   │   ├── getters/
+│   │   ├── mutations/
+│   │   ├── states/
+│   │   └── store.js
+│   ├── App.vue
+│   ├── main.js
+│   ├── registerServiceWorker.js
+│   ├── globalComponents.js
+│   ├── globalDirectives.js
+│   └── material-dashboard.js
+├── tests/
+│   ├── e2e/
+│   └── unit/
+├── theme/
+│   ├── coreui-vue-admin/
+│   └── vue-material-dashboard/
+├── .browserslistrc
+├── .gitignore
+├── .eslintignore
+├── .eslintrc.js
+├── .travis.yml
+├── appveyor.yml
+├── vue.config.js
+├── babel.config.js
+├── postcss.config.js
+├── package.json
+├── README.md
+└── LICENSE
+```
+
+## Browser Support
+
+At present, we officially aim to support the last two versions of the following browsers:
+
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
 ## Available Scripts
 
@@ -53,4 +155,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Something Missing?
 
-If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/basribasren/boilerplate-react-redux/issues)
+If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/basribasren/boilerplate-vue-vuex/issues)
